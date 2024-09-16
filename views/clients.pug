@@ -1,0 +1,25 @@
+doctype html 
+html 
+    head 
+        title= "Admin da Barbearia"
+        style 
+            include styles.css
+    body 
+        header 
+            h1="Agende ser Horário"
+        main 
+            div(class="container")
+                h2= "Clientes pendentes"
+                each i in Users 
+                    details
+                        summary= i.nome
+                        p=`Email: ${i.email}` 
+                        p=`Telefone: ${i.telefone}`
+                        p=`Data: ${i.data}` 
+                        p=`Hora: ${i.hora}`
+                        p=`Id: ${i.id}`
+                        form(action="/deleteClient" method="post")
+                            div(class="form-group")
+                                label(for="id")="digte o id do cliente para continuar"
+                                input(type="number", name="id" required)
+                                button(type="submit")="Remover cliente"  

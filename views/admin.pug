@@ -1,0 +1,21 @@
+doctype html 
+html 
+    head 
+        title= "Admin da Barbearia"
+        style 
+            include styles.css
+    body 
+        header 
+            h1="Agende ser Horário"
+        main 
+            div(class="container")
+                form(action="/login" method="post")
+                    div(class="form-group")
+                        label(for="nome")="Nome:"
+                        input(type="text", name="nome" id="nome" required)
+                    div(class="form-group")
+                        label(for="email")="Senha:"
+                        input(type="password", name="senha" id="senha" required)
+                    div(class="form-group")
+                        button(type="submit")="Entrar"
+                    

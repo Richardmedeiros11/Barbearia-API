@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Pietro",
+            "database": "${workspaceFolder:Barbearia-Projeto-main}/prisma/client.db"
+        }
+    ]
+}

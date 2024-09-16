@@ -1,0 +1,32 @@
+doctype html 
+head 
+    title= "Agendamento de Barbearia"
+    style 
+        include styles.css
+body 
+    header 
+        h1="Agende ser Horário"
+    main 
+        div(class="container")
+            form(action="/agendar" method="post")
+                div(class="form-group")
+                    label(for="nome")="Nome:"
+                    input(type="text", name="nome" id="nome" required)
+                div(class="form-group")
+                    label(for="email")="E-mail:"
+                    input(type="email", name="email" id="email" required)
+                div(class="form-group")
+                    label(for="telefone")="Telefone:"
+                    input(type="number", name="telefone" id="telefone" required)
+                div(class="form-group")
+                    label(for="data")="Data:"
+                    input(type="data" id="data" name="data" required)
+                div(class="form-group")
+                    label(for="hora")="Hora:"
+                    input(type="time" id="hora" name="hora" required)
+                div(class="form-group")
+                    button(type="submit")="Agendar"
+    footer 
+        p="© 2024 Top Hair Cabeleireiros."                  
+
+                 
